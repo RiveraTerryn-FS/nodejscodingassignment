@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 // ----------------------- ROUTES -----------------------
 app.get(["/", "/api", "/api/v1"], (req, res) => {
-    res.json({ message: "API up and running", readData  });
+    res.json({ message: "API up and running" });
 });
 app.use(`/api/v1/users`, users);
 // -------------------- SERVER START --------------------
